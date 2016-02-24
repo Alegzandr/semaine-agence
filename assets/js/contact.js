@@ -11,7 +11,7 @@ $(function () {
             $(this).serialize(),
             function (data) {
                 if (data.valid) {
-                    // If form ok
+                    $('form[name="contact"]').after('<p>Votre message a bien été envoyé.</p>');
                 }
                 else {
                     if (data.user) {

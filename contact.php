@@ -30,9 +30,13 @@ if ($message === 'Votre message.' || !isset($message) || empty($message)) {
 }
 
 $errors['valid'] = $valid;
+echo(json_encode($errors));
 
 if ($valid) {
-    // Send email
-} else {
-    echo(json_encode($errors));
+    // Send email (doesn't work on local servers)
+    $headers = 'From: messages@productshow.io' . "\r\n" .
+        'Reply-To: messages@productshow.io' . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
+
+    mail('contact@productshow.io', 'Message de ' . $user, $message, $headers);
 }
