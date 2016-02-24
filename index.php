@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<?php include('assets/inc/header.php') ?>
+<header></header>
 
+<section></section>
 
-
-<?php include('assets/inc/footer.php') ?>
+<footer></footer>
 
 <script src="assets/js/jquery-2.2.0.min.js"></script>
 </body>
