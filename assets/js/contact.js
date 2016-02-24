@@ -4,7 +4,7 @@ $(function () {
 
         var user = $(this).find(':text[name="user"]');
         var mail = $(this).find('input[name="mail"]');
-        var message = $(this).find('textarea[name="message"]');
+        var message = $(this).find(':text[name="message"]');
 
         $.post(
             $(this).attr('action'),

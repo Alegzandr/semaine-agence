@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/img/favicon.png">
 </head>
 <body>
 <form action="contact.php" method="post" name="contact">
     <input type="text" name="user" placeholder="Nom" required><br>
     <input type="email" name="mail" placeholder="E-Mail" required><br>
-    <textarea name="message">Votre message.</textarea><br>
+    <input type="text" name="message" placeholder="Votre message." required></input><br>
     <input type="submit">
 </form>
 
