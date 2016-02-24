@@ -4,14 +4,14 @@ $(function () {
 
         var user = $(this).find(':text[name="user"]');
         var mail = $(this).find('input[name="mail"]');
-        var message = $(this).find(':text[name="message"]');
+        var message = $(this).find('textarea[name="message"]');
 
         $.post(
             $(this).attr('action'),
             $(this).serialize(),
             function (data) {
                 if (data.valid) {
-                    $('form[name="contact"]').after('<br><p>Votre message a bien été envoyé.</p>');
+                    $('form[name="contact"]').after('<p>Votre message a bien été envoyé.</p>');
                 }
                 else {
                     if (data.user) {
