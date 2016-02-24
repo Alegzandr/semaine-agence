@@ -3,7 +3,7 @@ $(function () {
         $('.errors').remove();
 
         var user = $(this).find(':text[name="user"]');
-        var mail = $(this).find(':password[name="mail"]');
+        var mail = $(this).find('input[name="mail"]');
         var message = $(this).find('textarea[name="message"]');
 
         $.post(
@@ -14,7 +14,15 @@ $(function () {
                     // If form ok
                 }
                 else {
-                    // If not
+                    if (data.user) {
+                        user.after(data.user);
+                    }
+                    if (data.mail) {
+                        mail.after(data.mail);
+                    }
+                    if (data.message) {
+                        message.after(data.message);
+                    }
                 }
             }, 'json');
 
