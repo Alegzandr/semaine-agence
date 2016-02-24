@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Montserrat Light";
+    src: url(../../assets/fonts/montserrat-light.otf);
+}
+
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url(../../assets/fonts/montserrat-regular.otf);
+}
+
+body {
+    background-color: #f5e8de;
+    text-align: center;
+}
+
+.search-vids, form[name="vids-select"] {
+    background-color: #fff;
+    border: 1px solid #f7bf98;
+    width: 80%;
+    display: inline-block;
+}
+
+form[name="vids-select"] {
+    position: relative;
+    top: -1px;
+    left: -1px;
+}
+
+.search-vids::-webkit-input-placeholder {
+    font-family: "Montserrat Light";
+}
+
+.btn-update {
+    background-color: #ed7824;
+    font-family: "Montserrat Regular";
+    color: #fff;
+}

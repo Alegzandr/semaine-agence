@@ -1,7 +1,7 @@
 main {
     width: 100%;
-    font-size: 80%;
-    font-family: 'Roboto', sans-serif;
+    font-size: 70%;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
 }
 
@@ -55,8 +55,18 @@ main {
     position: relative;
 }
 
+.listArticle {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.listArticle li {
+    display: inline-block;
+}
+
 .otherArticle {
-    background-color: red;
+    background-color: blue;
     width: 80px;
     height: 150px;
     text-align: center;
@@ -69,19 +79,55 @@ main {
     text-align: center;
 }
 
-.otherArticle3 {
-    background-color: red;
-    width: 80px;
-    height: 150px;
-    text-align: center;
-}
+/* Website's own styles */
 
-ul li {
-    float: left;
-    margin: 5px;
-    margin-left: 10px;
-}
+@media screen and (min-width: 641px) {
+    html {
+        font-size: 30px;
+    }
 
-@media (min-width: 641px) {
+    .otherArticle {
+        background-color: pink;
+        width: 150px;
+        height: 250px;
+        text-align: center;
+    }
 
+    .otherArticle2 {
+        background-color: green;
+        width: 150px;
+        height: 250px;
+        text-align: center;
+    }
+
+    .containerlogo {
+        width: 220px;
+        height: 120px;
+        background: grey;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .articleContainer {
+        width: 450px;
+        height: 250px;
+        background: lightgrey;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .descContainer {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 150px;
+        background: lightgrey;
+        margin-top: 15px;
+        text-align: left;
+        border-radius: 10px;
+    }
 }
