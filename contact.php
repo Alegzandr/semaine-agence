@@ -14,6 +14,9 @@ $message = htmlentities($_POST['message']);
 if (!isset($user) || empty($user)) {
     $errors['user'] = '<span class="errors">Non saisi</span>';
     $valid = false;
+} elseif (strlen($user) < 2) {
+    $errors['user'] = '<span class="errors">Trop court</span>';
+    $valid = false;
 } elseif (strlen($user) > 128) {
     $errors['user'] = '<span class="errors">Trop long</span>';
     $valid = false;
@@ -30,7 +33,10 @@ if (!isset($mail) || empty($mail)) {
 if (!isset($message) || empty($message)) {
     $errors['message'] = '<br><span class="errors">Non saisi</span>';
     $valid = false;
-} elseif (strlen($user) > 256) {
+} elseif (strlen($message) < 4) {
+    $errors['message'] = '<span class="errors">Trop court</span>';
+    $valid = false;
+} elseif (strlen($message) > 256) {
     $errors['message'] = '<span class="errors">Trop long</span>';
     $valid = false;
 }
