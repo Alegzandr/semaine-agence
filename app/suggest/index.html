@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ProductShow App | Suggestion</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <!-- bxSlider CSS file -->
+    <link href="../assets/css/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/default.css">
     <link rel="stylesheet" href="../assets/css/suggest.css">
     <link rel="icon" href="../assets/img/favicon.png">
@@ -18,6 +20,11 @@
     </div>
     <div class="articleContainer">
         <div class="article">
+            <ul class="bxslider">
+                <li>token1</li>
+                <li>token2</li>
+                <li>token3</li>
+            </ul>
             ARTICLE ICI + PLUGIN CAROUSSEL ...
         </div>
     </div>
@@ -52,6 +59,8 @@
 </main>
 
 <script src="../assets/js/jquery-2.2.0.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="../assets/js/jquery.bxslider.js"></script>
 <script>
     $(function () {
         var i = 0;
@@ -63,6 +72,7 @@
                 $('.descContainer').slideToggle();
             }
         })
+        $('.bxslider').bxSlider();
     });
 </script>
 </body>
