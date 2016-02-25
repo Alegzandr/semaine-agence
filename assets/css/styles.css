@@ -196,6 +196,7 @@ h3 {
     font-family: "Nilland Black", sans-serif;
     font-size: 1.8em;
     padding-bottom: 20px;
+    text-transform: uppercase;
 }
 
 h4 {
@@ -305,7 +306,8 @@ form[name="contact"] {
 
 .choice {
     text-align: left;
-    margin-left: 27vw;
+    display: inline-block;
+    width: 200px;
 }
 
 .fields {
@@ -423,8 +425,56 @@ footer p {
     }
 
     #product {
-        text-align: justify;
         width: 55vw;
+    }
+
+    #product p {
+        text-align: justify;
+    }
+
+    #agency {
+        text-align: justify;
+    }
+
+    #agency > h3:first-child, #agency > p {
+        margin-left: 47vw;
+    }
+
+    #agency table {
+        display: inline-block;
+        margin-left: 25vw;
+    }
+
+    td p {
+        margin-left: -6vw;
+    }
+
+    .mobiles {
+        width: 45vw;
+        margin-top: -35vh;
+        margin-left: 2vw;
+    }
+
+    #team {
+        margin-top: 3vh;
+        margin-left: 40vw;
+    }
+
+    #contact h3 {
+        padding-left: 0;
+    }
+
+    #contact {
+        background-image: url(../img/laptop.png);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        height: 840px;
+    }
+
+    .fields {
+        width: 70vw;
+        margin-left: 16vw;
+        margin-top: 180px;
     }
 
     .not-mobile {
