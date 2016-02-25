@@ -490,5 +490,51 @@ footer p {
 
 /* Desktop version */
 @media (min-width: 1025px) {
+    html {
+        font-size: 100%;
+    }
 
+    header {
+        font-size: 2.2rem;
+    }
+
+    .header-hr {
+        width: 130%;
+    }
+
+    section {
+        text-align: justify;
+    }
+
+    .orange-inset {
+        width: 40vw;
+    }
+
+    .mobiles {
+        margin-top: -30vh;
+    }
+
+    #agency > h3 {
+        margin-top: 50px;
+    }
+
+    #agency table {
+        position: relative;
+        left: 29vw;
+        top: -30vh;
+    }
+
+    #agency {
+        max-height: 730px;
+    }
+
+    #team {
+        position: relative;
+        top: -30vh;
+        left: 7vw;
+    }
+
+    #contact {
+        text-align: center;
+    }
 }
