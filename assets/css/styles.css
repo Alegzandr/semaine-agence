@@ -158,13 +158,14 @@ header {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    top: 60vh;
+    top: 74vh;
     transition: all ease 0.8s;
 }
 
 .see-more:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #ef7923;
+    border: 2px solid #ef7923;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -200,7 +201,7 @@ h3 {
 h4 {
     font-family: "Montserrat Regular", sans-serif;
     font-size: 1.1em;
-    padding: 15px 0;
+    padding: 36px 0 10px 0;
     text-transform: uppercase;
     color: #ef7923;
     font-weight: bold;
@@ -225,13 +226,15 @@ h5 {
 .number-title {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 15px 0;
+    padding: 27px 0 10px 0;
+    position: relative;
+    left: 6vw;
 }
 
 .orange-inset {
     margin-top: 15px;
     width: 75vw;
+    display: none;
 }
 
 .mobiles {
@@ -244,8 +247,11 @@ h5 {
 }
 
 #agency h3 {
-    margin-top: 30px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
+}
+
+#team {
+    margin-top: 12px;
 }
 
 .social-orange {
@@ -269,6 +275,8 @@ td p {
     font-family: "Montserrat Light", sans-serif;
     font-size: .7em;
     margin-left: -6vw;
+    padding-top: 5px;
+    padding-bottom: 8px;
 }
 
 table {
@@ -278,13 +286,17 @@ table {
 }
 
 input[type="checkbox"] {
-    transform: scale(2);
+    transform: scale(1.5);
     padding: 10px;
 }
 
 label {
     font-family: "Montserrat Light", sans-serif;
     font-size: .9em;
+}
+
+#contact h3 {
+    margin-top: -18px;
 }
 
 form[name="contact"] {
@@ -294,7 +306,7 @@ form[name="contact"] {
 
 .choice {
     text-align: left;
-    margin-left: 32vw;
+    margin-left: 27vw;
 }
 
 .fields {
@@ -302,6 +314,8 @@ form[name="contact"] {
     padding: 20px 0;
     margin-top: 15px;
     line-height: 2;
+    width: 90vw;
+    margin-left: 5vw;
 }
 
 input[type="submit"] {
