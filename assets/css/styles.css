@@ -443,6 +443,7 @@ footer p {
     #agency table {
         display: inline-block;
         margin-left: 25vw;
+        font-size: 1.2em;
     }
 
     td p {
@@ -472,9 +473,14 @@ footer p {
     }
 
     .fields {
-        width: 70vw;
-        margin-left: 16vw;
+        width: 30vw;
+        margin-left: 36vw;
         margin-top: 180px;
+        transform: scale(1.5);
+    }
+
+    input[type="submit"] {
+        transform: scale(.75);
     }
 
     .not-mobile {
