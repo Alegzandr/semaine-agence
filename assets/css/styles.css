@@ -234,7 +234,6 @@ h5 {
 .orange-inset {
     margin-top: 15px;
     width: 75vw;
-    display: none;
 }
 
 .mobiles {
@@ -360,9 +359,71 @@ footer p {
     cursor: pointer;
 }
 
+.not-mobile {
+    display: none;
+}
+
 /* Tablet version */
 @media (min-width: 641px) {
+    html {
+        font-size: 130%;
+    }
 
+    .menu {
+        display: none;
+    }
+
+    .header-hr {
+        width: 37%;
+        margin-left: 40px;
+    }
+
+    .main-menu {
+        margin-top: -22px;
+        margin-right: 20px;
+    }
+
+    .main-menu li {
+        display: inline-block;
+        font-size: .4em;
+    }
+
+    .main-menu li a {
+        color: #fff;
+        text-shadow: 0 0 1px transparent;
+        text-decoration: none;
+        font-family: "Montserrat Regular", sans-serif;
+        margin-left: 15px;
+    }
+
+    .main-menu li a:hover, .main-menu li a:active {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    li a.active-tab {
+        color: #ef7923;
+    }
+
+    .iphone5s {
+        width: 50vw;
+        position: absolute;
+        top: 112vh;
+        right: 0;
+    }
+
+    section {
+        text-align: justify;
+        font-size: .8rem;
+    }
+
+    h3, h4, .orange-inset {
+        padding-left: 6vw;
+    }
+
+    .not-mobile {
+        display: inline-block;
+    }
 }
 
 /* Desktop version */
