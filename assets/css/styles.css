@@ -71,7 +71,12 @@ table {
 
 @font-face {
     font-family: "Montserrat Regular";
-    src: url(../fonts/montserrat-regular.ttf);
+    src: url(../fonts/montserrat-regular.otf);
+}
+
+@font-face {
+    font-family: "Montserrat Light";
+    src: url(../fonts/montserrat-light.otf);
 }
 
 /* ProductShow own styles
@@ -335,6 +340,10 @@ footer p {
 .social {
     width: 32px;
     margin-left: 20px;
+}
+
+.social-orange:hover, .social:hover {
+    cursor: pointer;
 }
 
 /* Tablet version */

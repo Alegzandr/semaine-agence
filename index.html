@@ -4,15 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ProductShow NFC</title>
+    <link rel="stylesheet" href="assets/css/jquery.sidr.dark.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" href="assets/img/favicon.png">
 </head>
 <body>
-<header>
+<div id="sidr-right">
+    <ul>
+        <li>
+            <a href="#home">Accueil</a>
+        </li>
+        <li>
+            <a href="#product">Notre produit</a>
+        </li>
+        <li>
+            <a href="#agency">Nous sommes</a>
+        </li>
+        <li>
+            <a href="#team">Une équipe</a>
+        </li>
+        <li>
+            <a href="#contact">Je souhaite</a>
+        </li>
+    </ul>
+</div>
+
+<header id="home">
     <div class="header-images">
         <img src="assets/img/logo.png" alt="ProductShow" class="logo">
         <hr class="header-hr">
-        <img src="assets/img/menu.png" alt="Menu" class="menu">
+        <a id="right-menu" href="#sidr">
+            <img src="assets/img/menu.png" alt="Menu" class="menu">
+        </a>
     </div>
 
     <div class="header-titles">
@@ -71,7 +94,7 @@
 
     <img src="assets/img/mobiles.png" alt="Mobiles" class="mobiles">
 
-    <h3>Une équipe</h3>
+    <h3 id="team">Une équipe</h3>
     <table>
         <tr>
             <td>
@@ -193,6 +216,7 @@
 </footer>
 
 <script src="assets/js/jquery-2.2.1.min.js"></script>
-<script src="assets/js/scroll.js"></script>
+<script src="assets/js/jquery.sidr.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

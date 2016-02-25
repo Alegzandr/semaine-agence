@@ -1,4 +1,10 @@
 $(function () {
+    /* Start sidr plugin */
+    $('#right-menu').sidr({
+        name: 'sidr-right',
+        side: 'right'
+    });
+
     /* Smooth scroll for a tags */
 
     $('a[href*="#"]:not([href="#"])').click(function () {
