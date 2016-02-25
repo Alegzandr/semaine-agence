@@ -9,8 +9,8 @@ $(function () {
     $(document).mouseup(function (e) {
         var container = $("#sidr");
 
-        if (!container.is(e.target) // if the target of the click isn't the container...
-            && container.has(e.target).length === 0) // ... nor a descendant of the container
+        if (!container.is(e.target) // If the target of the click isn't the container ...
+            && container.has(e.target).length === 0) // ... not a descendant of the container
         {
             $.sidr('close', 'sidr-right');
         }
