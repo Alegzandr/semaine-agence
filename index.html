@@ -154,37 +154,39 @@
     <h3>Je souhaite</h3>
 
     <form action="contact" method="post" name="contact">
-        <input type="checkbox" name="type" id="ask" value="ask">
-        <label for="ask">En savoir plus</label>
+        <div class="choice">
+            <input type="checkbox" name="type" id="ask" value="ask">
+            <label for="ask">En savoir plus</label>
+            <br>
 
-        <input type="checkbox" name="type" id="project" value="project">
-        <label for="project">Démarrer un projet</label>
+            <input type="checkbox" name="type" id="project" value="project">
+            <label for="project">Démarrer un projet</label>
+            <br>
 
-        <input type="checkbox" name="type" id="quotation" value="quotation">
-        <label for="quotation">Demander un devis</label>
+            <input type="checkbox" name="type" id="quotation" value="quotation">
+            <label for="quotation">Demander un devis</label>
+            <br>
+        </div>
 
-        <div>
+        <div class="fields">
             <input type="text" name="user" placeholder="Votre nom ...">
-            <input type="email" name="mail" placeholder="Votre email ...">
-            <textarea name="message" placeholder="Dites-nous comment vous aider."></textarea>
+            <input type="email" name="mail" placeholder="Votre email ..."><br>
+            <textarea rows="4" cols="40" name="message" placeholder="Dites-nous comment vous aider."></textarea>
+            <br>
 
-            <input type="submit">
+            <input type="submit" value="Envoyer">
         </div>
     </form>
 </section>
 
 <footer>
     <p>Vous pouvez nous retrouver sur les réseaux sociaux</p>
-    <img src="assets/img/" alt="Facebook">
-    <img src="assets/img/" alt="Twitter">
-    <img src="assets/img/" alt="LinkedIn">
-    <img src="assets/img/" alt="Google+">
+    <img src="assets/img/facebook.png" alt="Facebook" class="social">
+    <img src="assets/img/twitter.png" alt="Twitter" class="social">
+    <img src="assets/img/linkedin.png" alt="LinkedIn" class="social">
+    <img src="assets/img/googleplus.png" alt="Google+" class="social">
 
     <p>Vous pourrez également y suivre notre projet ProductShow</p>
-    <img src="assets/img/" alt="Facebook">
-    <img src="assets/img/" alt="Twitter">
-    <img src="assets/img/" alt="LinkedIn">
-    <img src="assets/img/" alt="Google+">
 
     <hr class="footer-hr">
     <p>Copyright &copy; 2016 ProductShow Tout droits réservés - Conditions d’utilisation</p>
