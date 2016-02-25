@@ -5,6 +5,17 @@ $(function () {
         side: 'right'
     });
 
+    /* Click to close menu */
+    $(document).mouseup(function (e) {
+        var container = $("#sidr");
+
+        if (!container.is(e.target) // if the target of the click isn't the container...
+            && container.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+            $.sidr('close', 'sidr-right');
+        }
+    });
+
     /* Smooth scroll for a tags */
 
     $('a[href*="#"]:not([href="#"])').click(function () {
@@ -33,7 +44,7 @@ $(function () {
     /* On click events */
 
     document.querySelectorAll('.see-more')[0].onclick = function () {
-       smoothScroll('#product');
+        smoothScroll('#product');
     };
 
 });
