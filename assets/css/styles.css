@@ -381,6 +381,8 @@ footer p {
     .main-menu {
         margin-top: -22px;
         margin-right: 20px;
+        max-width: none;
+        width: 101vw;
     }
 
     .main-menu li {
@@ -413,12 +415,16 @@ footer p {
     }
 
     section {
-        text-align: justify;
         font-size: .8rem;
     }
 
     h3, h4, .orange-inset {
         padding-left: 6vw;
+    }
+
+    #product {
+        text-align: justify;
+        width: 55vw;
     }
 
     .not-mobile {
