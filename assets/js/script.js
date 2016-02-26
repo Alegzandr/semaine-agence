@@ -47,4 +47,8 @@ $(function () {
         smoothScroll('#product');
     };
 
+    document.querySelectorAll('.up')[0].onclick = function () {
+        smoothScroll('#home');
+    };
+
 });

@@ -83,6 +83,7 @@ table {
 Mobile version */
 
 body {
+    overflow-x: hidden;
     text-align: center;
 }
 
@@ -483,6 +484,10 @@ footer p {
         transform: scale(.75);
     }
 
+    .up {
+        display: none;
+    }
+
     .not-mobile {
         display: inline-block;
     }
@@ -536,5 +541,18 @@ footer p {
 
     #contact {
         text-align: center;
+    }
+
+    .up {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 0);
+        top: 405vh;
+    }
+
+    up:hover {
+        cursor: pointer;;
     }
 }
