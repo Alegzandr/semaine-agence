@@ -401,7 +401,12 @@ footer p {
         margin-left: 15px;
     }
 
-    .main-menu li a:hover, .main-menu li a:active {
+    .main-menu li a:hover {
+        color: #ef7923;
+        text-decoration: none;
+    }
+
+    .main-menu li a:active {
         color: #fff;
         text-decoration: none;
     }
