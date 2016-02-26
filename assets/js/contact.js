@@ -2,6 +2,7 @@ $(function () {
     $('form[name="contact"]').submit(function () {
         $('.errors').remove();
 
+        var type = $(this).find('label#quotation');
         var user = $(this).find(':text[name="user"]');
         var mail = $(this).find('input[name="mail"]');
         var message = $(this).find('textarea[name="message"]');
@@ -14,6 +15,9 @@ $(function () {
                     $('form[name="contact"]').after('<p>Votre message a bien été envoyé.</p>');
                 }
                 else {
+                    if (data.type) {
+                        type.after(data.type);
+                    }
                     if (data.user) {
                         user.after(data.user);
                     }

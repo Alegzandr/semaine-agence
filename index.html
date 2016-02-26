@@ -196,17 +196,17 @@
 <section id="contact">
     <h3>Je souhaite</h3>
 
-    <form action="contact" method="post" name="contact">
+    <form action="contact.php" method="post" name="contact">
         <div class="choice">
-            <input type="checkbox" name="type" id="ask" value="ask">
+            <input type="checkbox" name="type[]" id="ask" value="ask">
             <label for="ask">En savoir plus</label>
             <br>
 
-            <input type="checkbox" name="type" id="project" value="project">
+            <input type="checkbox" name="type[]" id="project" value="project">
             <label for="project">Démarrer un projet</label>
             <br>
 
-            <input type="checkbox" name="type" id="quotation" value="quotation">
+            <input type="checkbox" name="type[]" id="quotation" value="quotation">
             <label for="quotation">Demander un devis</label>
             <br>
         </div>

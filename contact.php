@@ -7,10 +7,16 @@ header('Access-Control-Allow-Methods: POST');
 $valid = true;
 $errors = [];
 
+$type = $_POST['type'];
 $user = htmlentities($_POST['user']);
 $mail = htmlentities($_POST['mail']);
 $message = htmlentities($_POST['message']);
 
+
+if (!isset($type) || empty($type)) {
+    $errors['type'] = '<span class="errors">Non sélectionné</span>';
+    $valid = false;
+}
 if (!isset($user) || empty($user)) {
     $errors['user'] = '<span class="errors">Non saisi</span>';
     $valid = false;
@@ -50,5 +56,5 @@ if ($valid) {
         'Reply-To: messages@productshow.io' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
-    mail('contact@productshow.io', 'Message de ' . $user, $message, $headers);
+    mail('contact@productshow.io', $type . ' of ' . $user, $message, $headers);
 }
