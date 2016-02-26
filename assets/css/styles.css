@@ -557,13 +557,9 @@ footer p {
 
     .up {
         display: inline-block;
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translate(-50%, 0);
-        top: 405vh;
+        margin-left : 85%;
+        margin-top : 450px;
     }
-
     up:hover {
         cursor: pointer;;
     }
