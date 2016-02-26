@@ -2,10 +2,10 @@ $(function () {
     $('form[name="contact"]').submit(function () {
         $('.errors').remove();
 
-        var type = $(this).find('label#quotation');
-        var user = $(this).find(':text[name="user"]');
-        var mail = $(this).find('input[name="mail"]');
-        var message = $(this).find('textarea[name="message"]');
+        var type = $('label[for="quotation"]');
+        var user = $('input[name="user"]');
+        var mail = $('input[name="mail"]');
+        var message = $('textarea[name="message"]');
 
         $.post(
             $(this).attr('action'),

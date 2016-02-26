@@ -96,6 +96,13 @@ p {
     line-height: 1.3;
 }
 
+.errors {
+    font-family: "Montserrat Light", sans-serif;
+    font-size: .8em;
+    color: #bf404a;
+    margin-left: 10px;
+}
+
 header {
     width: 100%;
     height: 100vh;

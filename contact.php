@@ -7,13 +7,12 @@ header('Access-Control-Allow-Methods: POST');
 $valid = true;
 $errors = [];
 
-$type = $_POST['type'];
 $user = htmlentities($_POST['user']);
 $mail = htmlentities($_POST['mail']);
 $message = htmlentities($_POST['message']);
 
 
-if (!isset($type) || empty($type)) {
+if (!isset($_POST['type']) || empty($_POST['type'])) {
     $errors['type'] = '<span class="errors">Non sélectionné</span>';
     $valid = false;
 }
